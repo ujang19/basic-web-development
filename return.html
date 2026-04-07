@@ -5,6 +5,20 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
   >
+  <style>
+    form fieldset {
+      border: 2px solid #9aa4b2;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    form legend {
+      padding: 0 0.5rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+  </style>
   <title>Return Book</title>
 </head>
 <body>
@@ -17,16 +31,29 @@
     <br><br>
 
     <form>
-      <label>Member Name</label><br>
-      <input type="text"><br><br>
+      <fieldset>
+        <legend>Return Information</legend>
 
-      <label>Book Title</label><br>
-      <input type="text"><br><br>
+        <label>Member Name</label><br>
+        <input type="text"><br><br>
 
-      <label>Return Date</label><br>
-      <input type="date"><br><br>
+        <label>Book Title</label><br>
+        <input type="text"><br><br>
 
-      <button type="submit">Return Book</button>
+        <label>Return Date</label><br>
+        <input type="date"><br><br>
+
+        <label>Book Condition</label><br>
+        <select>
+          <option>Good</option>
+          <option>Damaged</option>
+        </select><br><br>
+
+        <label>Notes</label><br>
+        <textarea rows="4"></textarea><br><br>
+
+        <button type="submit">Return Book</button>
+      </fieldset>
     </form>
   </main>
 </body>

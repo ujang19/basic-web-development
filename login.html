@@ -5,6 +5,20 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
   >
+  <style>
+    form fieldset {
+      border: 2px solid #9aa4b2;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    form legend {
+      padding: 0 0.5rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+  </style>
   <title>Library Login</title>
 </head>
 <body>
@@ -15,17 +29,21 @@
     <p>Please login to access the library system</p>
 
     <form action="index.html" method="get">
-      <label>Email</label> <br>
-      <input type="email">
+      <fieldset>
+        <legend>Login Form</legend>
 
-      <br><br>
+        <label>Email</label> <br>
+        <input type="email">
 
-      <label>Password</label> <br>
-      <input type="password">
+        <br><br>
 
-      <br><br>
+        <label>Password</label> <br>
+        <input type="password">
 
-      <button type="submit">Login</button>
+        <br><br>
+
+        <button type="submit">Login</button>
+      </fieldset>
     </form>
 
     <p>
